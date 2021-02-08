@@ -1,0 +1,21 @@
+.card {
+    height: 200px;
+    width: 150px;
+    flex-direction: column;
+    margin: 10px;
+    
+}
+
+.half {
+    flex: 50%;
+    border:  2px solid white;
+    height: 50%;
+}
+
+
+.text {
+    padding: 5px;
+    color: ivory;
+}
+
+
