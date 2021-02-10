@@ -1,5 +1,7 @@
-<div *ngFor='let set of sets'  >
-    <div>{{set.set_name}}</div>
-    <flashcard-list [flashcards]="set.flashcards"></flashcard-list>
+<div class="set-container">
+    <div class="set" *ngFor='let set of sets'  >
+        <div class="title"><h3>{{set.set_name}}</h3></div>
+        <flashcard-list [flashcards]="set.flashcards"></flashcard-list>
+    </div>
 </div>
     

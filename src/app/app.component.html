@@ -1,6 +1,11 @@
-<nav>
-    <ul>
-      <li><a routerLink="/sets" routerLinkActive="active">Sets</a></li>
-    </ul>
-  </nav>
-<sets></sets>
+
+<nav class="navbar">
+    <div class="title">
+        <h1>Flashy!</h1>
+    </div>
+    <div class="links">
+        <a class="link" routerLink = "/home">Home</a> 
+        <a class="link" routerLink = "/sets">Sets </a> 
+    </div>
+</nav>
+<router-outlet></router-outlet>

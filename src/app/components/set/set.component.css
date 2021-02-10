@@ -1,0 +1,15 @@
+.title {
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+.set-container {
+    padding: 10px 20px;
+    justify-content: center;
+}
+
+.set {
+    padding-bottom: 10px;
+    justify-content: center;
+}
