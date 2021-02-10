@@ -3,7 +3,7 @@
     height: 50px;
     width: 100%;
     justify-content: space-between;
-    background-color: rgba(8, 37, 65, 0.486);
+    background-color: rgba(108, 170, 228, 0.712);
     align-items: center;
     padding: 10px;
   
@@ -24,7 +24,7 @@
     letter-spacing: 2px;
     font-size: 1.5em;
     text-decoration: none;
-    color: thistle;
+    color: rgb(243, 227, 243);
 }
 
 .link:hover {

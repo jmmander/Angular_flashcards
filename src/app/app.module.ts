@@ -9,7 +9,8 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { BackendService } from './services/backend.service';
 import { HttpClientModule } from '@angular/common/http';
 import { HomepageComponent } from './components/homepage/homepage.component';
-import { SetComponent } from './components/set/set.component'; 
+import { SetComponent } from './components/set/set.component';
+import { SetListComponent } from './components/set-list/set-list.component'; 
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { SetComponent } from './components/set/set.component';
     FlashcardComponent,
     FlashcardListComponent,
     HomepageComponent,
-    SetComponent
+    SetComponent,
+    SetListComponent
   ],
   imports: [
     BrowserModule,

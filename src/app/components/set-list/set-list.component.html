@@ -1,0 +1,8 @@
+<div class="setinfo_container">
+    <div class="set_card" *ngFor='let set of sets_info'>
+        <div class="set_info" (click)="goToSet(set_name)">
+       <div class="set_name"> {{set['name'] | uppercase}} </div> 
+        <div> {{set['no_fc']}} cards </div>
+        <div> Grade </div>
+        </div>
+</div>
