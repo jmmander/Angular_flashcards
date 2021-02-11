@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ObjectUnsubscribedError } from 'rxjs';
 import {FlashcardService} from '../../services/flashcard.service'
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'sets',
@@ -9,19 +10,35 @@ import {FlashcardService} from '../../services/flashcard.service'
 })
 export class SetComponent implements OnInit {
 
-  sets :any = [];
+  set_id: any; 
 
-  constructor(private flashcardService: FlashcardService) { }
+  set;
 
-  getSets(): void {
-    this.flashcardService.getFlashcardSets().subscribe((data: any) => {
-      console.log("getting set data");
-      console.log(data);
-      this.sets = data;
+
+  constructor(private activatedRoute: ActivatedRoute, private flashcardService: FlashcardService) { }
+
+  getSetId(): void {
+    this.activatedRoute.paramMap.subscribe(params => { 
+      console.log("getting set")
+      this.set_id = params.get('id'); 
+      this.getSetById(this.set_id);
+  });
       }
-    )
+
+  getSetById(id): void {
+    this.set = this.flashcardService.getSet(this.set_id).subscribe((data) => {
+      console.log("SET DATA");
+      console.log(data);
+      this.set = data;
+    });
+   ;
   }
+    
+  
 
   ngOnInit(): void {
-    this.getSets();
+    this.set_id = this.getSetId();
+    console.log(this.set_id)
+    
+  
 }};

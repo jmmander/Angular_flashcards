@@ -8,15 +8,17 @@ import { HttpClient } from '@angular/common/http';
 
 export class FlashcardService {
 
-  api_url: string = "/api/";
+  api_url: string = "/api/flashcard_sets";
 
   constructor(private http: HttpClient) { }
 
   getFlashcardSets() {
-    return this.http.get(this.api_url + "flashcard_sets")
+    return this.http.get('/api/flashcard_sets')
   }
 
-  getFlashcard(id) {
-    return this.http.get(`${this.api_url + "flashcards"}/${id}`)
+  getSet(id: number) {
+    return this.http.get(`/api/flashcard_sets/${id}`)
   }
+
+
 }

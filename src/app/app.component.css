@@ -1,14 +1,13 @@
 .navbar {
     display: flex;
-    height: 50px;
+    height: 70px;
     width: 100%;
-    justify-content: space-between;
-    background-color: rgba(108, 170, 228, 0.712);
-    align-items: center;
+    background: linear-gradient(260deg, #7eb7ec, #df9ef8);
     padding: 10px;
-  
-
+    justify-content: space-between;
+    align-items: center;
 }
+
 
 .title {
     padding-right: 5px;
@@ -25,8 +24,13 @@
     font-size: 1.5em;
     text-decoration: none;
     color: rgb(243, 227, 243);
+    
 }
 
 .link:hover {
     color: whitesmoke;
+}
+
+.links {
+    display: flex;
 }

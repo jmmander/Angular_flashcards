@@ -1,7 +1,8 @@
 .title {
-    color: whitesmoke;
+    color: rgba(52, 191, 255, 0.8);
     display: flex;
     justify-content: center;
+    letter-spacing: 1px;
 }
 
 .set-container {

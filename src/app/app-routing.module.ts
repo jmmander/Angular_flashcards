@@ -8,7 +8,8 @@ import { SetComponent } from './components/set/set.component'
 
 const routes: Routes = [{path: 'flashcards', component: FlashcardListComponent},
                         {path: 'sets', component: SetListComponent},
-                        {path: 'home', component: HomepageComponent}
+                        {path: 'home', component: HomepageComponent},
+                        {path: 'flashcard_sets/:id', component: SetComponent}
                         ]
 
 @NgModule({

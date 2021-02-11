@@ -1,21 +1,37 @@
 .card {
-    height: 200px;
+    display: flex;
+    height: 230px;
     width: 150px;
-    flex-direction: column;
+    border-radius: 4px;
+    align-items: center;
+    transition: .3s ease;
+    box-shadow: 0px 0px 2px 2px rgba(79, 255, 240, 0.8);
+    color:  #53dfdf;
+    font-weight: 550;
     margin: 10px;
+    flex-direction: column;
+    padding: 5px;
     
 }
 
 .half {
-    flex: 50%;
-    border:  2px solid white;
     height: 50%;
 }
 
-
-.text {
-    padding: 5px;
-    color: ivory;
+hr {
+    border: none;
+    width: 100%;
+    border-top: 1px solid rgba(97, 236, 224, 0.6);
+    box-shadow: none;
+    margin: 5px 0px;
 }
+
+.card:hover {
+    background: linear-gradient(130deg, rgb(38, 184, 171), #4959ebc0);
+    box-shadow: none;
+    color: rgb(255, 255, 255);
+}
+
+
 
 
